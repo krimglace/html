@@ -1,0 +1,438 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+/* Header */
+	header{
+		text-align: center;
+		background-color: #495579;
+	}
+	header .topbar{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		background-color: black;
+		text-align: right;
+		padding-right: 10px;
+	}
+	header .topbar img{
+		/*width: 1.5%;*/
+		height: 15px;
+		margin-right: 5px;
+	}
+	header img.logo{
+		width: 10%;
+	}
+	nav.navbar-style{
+		text-align: justify;
+		background-color: #263159;
+	}
+	nav.navbar-style ul li{
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 9px;
+	}
+	nav.navbar-style ul li a{
+		padding: 10px 20px;
+		color: white;
+		transition: .5s ease;
+		text-decoration: none;
+	}
+	nav.navbar-style ul li a:hover{
+		background-color: #251749;
+		transition: .5s ease;
+	}
+	.content{
+		padding: 10px 0;
+		background-color: #FFFBEB;
+		margin-top: -12px;
+	}
+/* End Header */
+
+/* Home */
+	.content-carousel{
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.content-body, .about-home, .galeri-home{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.content-carousel img{
+		border: 5px solid black;
+		border-radius: 20px;
+		width: 100%;
+		height: 500px;
+	}
+	.galeri-home img{
+		border: 5px solid black;
+		border-radius: 20px;
+		width: 100%;
+		height: 300px;	
+	}
+	.carousel-indicators button{
+		border-radius: 50%;
+	}
+	.logo-content img{
+		width: 60%;
+		margin-left: 20%;
+		margin-top: -10%;
+		margin-bottom: -10%;
+	}
+	.social-media{
+		background-color: #495579;
+		padding: 10%;
+		border-radius: 20px;
+	}
+	.social-media img{
+		width: 100%;
+	}
+	.social-media a{
+		text-decoration: none;
+		color: white;
+	}
+	.about-home{
+		height: 400px;
+		padding-left: 10%;
+		padding-right: 10%;
+		display: flex;
+		align-items: center;
+		border-radius: 20px;
+	}
+/* End Home */
+
+/* About Us */
+	.about{
+		width: 60%;
+		margin-left: 20%;
+		padding-top: 5%;
+		background-color: rgba(73, 85, 121, 0.2);
+		border-radius: 20px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		text-align: center;
+		padding-bottom: 5%;
+	}
+	.about-content{
+		text-align: center;
+	}
+	.about-content h5{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+/* End About Us */
+
+/* Clients */
+	.lets{
+		text-align: center;
+	}
+	.illustration{
+		margin: 20px 10%;
+	}
+	.illustration .coverillus{
+		width: calc(100%/5);
+		float: left;
+		text-align: center;
+	}
+	.illustration img{
+		margin-left: 5%;
+		margin-top: 10%;
+		border:  5px solid black;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.illustration .coverilluspotrait{
+		text-align: center;
+		width: calc(100%/7);
+		float: left;
+	}
+	.penghalang {
+	    display: none;
+	    position: fixed;
+	    z-index: 1;
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    overflow: auto;
+	    background-color: rgb(0,0,0);
+	    background-color: rgba(0,0,0,0.4);
+	}
+/* End Clients */
+
+/* Blog */
+	.blog{
+		float: left;
+		width: 70%;
+	}
+	.current-blog{
+		float: left;
+		width: 30%;
+	}
+	.blog-content{
+		border-right: 1px solid black;
+		padding-right: 10px;
+		min-height: 65vh;
+		margin-left: 10%;
+		padding-right: 10%;
+	}
+	.artikel-terbaru{
+		/*border-left: 1px solid black;*/
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.artikel-terbaru input{
+		padding: 7.5px;
+		width: 50%;
+		border-radius: 5px;
+		border: 1px solid black;
+		margin-left: 10%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.artikel-terbaru button{
+		background-color: powderblue;
+		border: 1px solid powderblue;
+		border-radius: 5px;
+		padding: 7.5px 10px;
+		cursor: pointer;
+		font-weight: bold;
+		color: black;
+	}
+	.artikel-terbaru a{
+		color: black;
+	}
+	.new-blog{
+		overflow: hidden;
+		height: 500px;
+		position: relative;
+	}
+	.new-blog a{
+		text-decoration: none;
+	}
+	.new-blog img:hover{
+		transform: scale(1.1);
+		transition: .5s ease;
+	}
+	.new-blog img{
+		transition: .5s ease;
+		width: 100%;
+		height: 100%
+	}
+	.new-blog div{
+		position: absolute;
+		bottom: 10%;
+		left: 10%;
+		right: 10%;
+	}
+	.old-blog img{
+		width: 100%;
+		border-radius: 10px;
+	}
+	.old-blog-cover{
+		padding: 20px;
+		border: 1px solid black;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.blog1-content{
+		padding: 0 10%;
+		border-right: 1px solid black;
+	}
+	.blog1-content img{
+		width: 100%;
+	}
+	.blog1-content a{
+		text-decoration: none;
+	}
+	.lainnya{
+		margin-top: -10%;
+	}
+	.lainnya img{
+		margin-bottom: -15%;
+		width: 80%;
+		margin-left: 10%;
+	}
+	.bloghr{
+		margin-left: 10%;
+		width: 80%;
+	}
+/* End Blog */
+
+/* Contact */
+	.contact{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		width: 50%;
+		margin-left: 25%;
+	}
+	.contact h3{
+		text-align: center;
+	}
+	.form-group{
+		margin-top: 5px;
+	}
+	.form-group input, .form-group textarea{
+		width: 100%;
+		height: 10%;
+		padding: 7.5px;
+		border-radius: 5px;
+		border:  1px solid black;
+	}
+	.form-group label{
+		font-weight: bold;
+	}
+	.pesanerror{
+		color: red;
+	}
+	#kirim{
+		background-color: powderblue;
+		border: 0;
+		border-radius: 5px;
+		padding: 10px 25px;
+		cursor: pointer;
+		font-weight: bold;
+	}
+	#kirim:hover{
+		opacity: 80%;
+	}
+/* End Contact */
+
+/* Footer */
+	div.footer{
+		text-align: center;
+	}
+	footer{
+		background-color: #495579;
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 180px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+	}
+	footer .logo{
+		width: 50%;
+	}
+	footer .menus{
+		margin-right: 5%;
+		text-align: justify;
+	}
+	footer .menus ul li{
+		display: block;
+		margin-left: 5%;
+	}
+	footer .menus ul li a{
+		color: white;
+		font-size: 14px;
+	}
+	footer .menus img{
+		height: 40px;
+		width: auto;
+	}
+	footer .footerfooter{
+		width: 100%;
+	}
+	footer .footerfooter a{
+		text-decoration: none;
+	}
+	footer iframe{
+		border-radius: 10px;
+		border: 3px solid black;
+	}
+/* End Footer */
+
+/* Terimakasih */
+	.register-redirect{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+	}
+	.card-register-redirect{
+		margin-left: 10%;
+		width: 80%;
+		border:  1px solid black;
+		text-align: center;
+	}
+	.card-img-top-1{ width: 20%; }
+	.loading1{
+	  	background-color: blue;
+	  	opacity: 50%;
+	  	animation: loading1 1s infinite;
+	}
+	.loading2{
+	  	background-color: blue;
+	  	opacity: 50%;
+	  	animation: loading2 1s infinite;
+	}
+	.loading3{
+	  	background-color: blue;
+	  	opacity: 50%;
+	  	animation: loading3 1s infinite;
+	}
+	@keyframes loading1{
+	  25% {
+	    transform: scale(1);
+	  }
+	  50% {
+	    transform: scale(1.2);
+	    opacity: 100%;
+	  }
+	  75% {
+	    transform: scale(1);
+	  }
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+	@keyframes loading2{
+	  25% {
+	    transform: scale(1);
+	  }
+	  50% {
+	    transform: scale(1);
+	  }
+	  75% {
+	    transform: scale(1.2);
+	    opacity: 100%;
+	  }
+	  100% {
+	    transform: scale(1);
+	  }
+	}
+	@keyframes loading3{
+	  25% {
+	    transform: scale(1);
+	  }
+	  50% {
+	    transform: scale(1);
+	  }
+	  75% {
+	    transform: scale(1);
+	  }
+	  100% {
+	    transform: scale(1.2);
+	    opacity: 100%;
+	  }
+	}
+	.box-load{ margin-top: 10px; }
+	.box-load div{
+	  width: 15px;
+	  height: 15px;
+	  display: inline-block;
+	  border-radius: 50%;
+	  margin: 0 6px;
+	}
+/* End Terimakasih */
